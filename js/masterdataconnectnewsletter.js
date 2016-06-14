@@ -158,7 +158,7 @@ function FormCreate(storeName, dataEntity, htmlElementId, messageLoading, messag
 
 	htmlContent += '<div id="co_message_loading" class="loading-msg" style="display:none;"><p>' + messageLoading + '</p></div>';
 
-	htmlContent += '<div id="co_message_validate" class="validation-msg" style="display:none;"><h2>' + messageValidation + '</h2><p>Verifique se os campos foram preenchidos corretamente e tente novamente.</p><p></div>';
+	htmlContent += '<div id="co_message_validate" class="validation-msg" style="display:none;"><p>' + messageValidation + '. Verifique se os campos foram preenchidos corretamente e tente novamente.</p><p></div>';
 
 	htmlContent += '<div id="co_message_success" class="success-msg" style="display:none;"><h2>' + messageSuccess + '</h2><p>A partir de agora você vai receber nossas ofertas, promoções e dicas.</p><p>Acesse seu e-mail para pegar o seu cupom de desconto.</p></div>';
 	
