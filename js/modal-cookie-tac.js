@@ -10,7 +10,7 @@ jQuery(document).ready(function(){
 	
 	jQuery.cookie('visits', visits, { expires: 1, path: '/' });
 		
-	console.debug(jQuery.cookie('visits'));
+	//console.debug(jQuery.cookie('visits'));
 		
 	if ( jQuery.cookie('visits') > 1 ) {
 		jQuery('#active-popup').hide();
