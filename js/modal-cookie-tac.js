@@ -35,3 +35,16 @@ jQuery(document).mouseup(function(e){
 	}
 
 });
+
+/// Script to mount newsletter form
+jQuery(document).ready(function(){
+	var storeName = "toqueacampainha"; //Indica o nome da conta utilizada na API do MasterData
+	var dataEntity = "NL"; //Indica a sigla da entidade de dados utilizada na API do MasterData
+	var htmlElementId = "newsForm"; //Indica o ID do elemento HTML que receberÃ¡ o formulÃ¡rio
+	var messageLoading = "Carregando..."; //Mensagem de carregamento do formulÃ¡rio (ao salvar)
+	var messageValidation = "E-mail não cadastrado!"; //Mensagem de validaÃ§Ã£o de formulÃ¡rio
+	var messageSuccess = "E-mail cadastrado com sucesso."; //Mensagem de sucesso
+	var messageError = "E-mail não cadastrado!"; //Mensagem de erro
+	
+	FormCreate(storeName, dataEntity, htmlElementId, messageLoading, messageValidation, messageSuccess, messageError);
+});
