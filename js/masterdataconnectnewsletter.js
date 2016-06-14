@@ -165,7 +165,7 @@ function FormCreate(storeName, dataEntity, htmlElementId, messageLoading, messag
 	htmlContent += '<div id="co_message_error" class="error-msg" style="display:none;"><p>' + messageError + '. Possivelmente estamos com algum problema em nossos servidores. Tente novamente em instantes.</p></div>';
 
 	htmlContent += '<div class="formContainerNewsletter">';
-		htmlContent += '<h2>Entre para a família toque a campainha e ganhe 10% de desconto</h2>';
+		htmlContent += '<h2>Entre para a família Toque a Campainha e ganhe 10% de desconto</h2>';
 		htmlContent += '<p>Cadastre-se para receber ofertas especiais em seu e-mail e ganhe um cupom para a sua primeira compra.</p>';
 		htmlContent += '<div class="newsletter-modal">';
 			htmlContent += '<form class="form-modal-default" id="co_form" action="javascript:FormValidate();" method="post">';
