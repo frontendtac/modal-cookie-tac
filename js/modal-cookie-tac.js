@@ -1,5 +1,4 @@
-	////SCRIPT FOR MODAL POPUP WINDOW
-
+////SCRIPT FOR MODAL POPUP WINDOW
 jQuery(document).ready(function(){	
 	jQuery('#popup-container a.close').click(function(){
 			jQuery('#popup-container').fadeOut();

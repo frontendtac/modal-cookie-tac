@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,300,300italic,400italic,700,700italic,800,800italic);
-/* Fullscreen overlay for modal background */
+/* Modal Cookie - Newsletter */
 #active-popup {
   background-color: rgba(0,0,0,0.4);
   position: absolute;
@@ -13,6 +13,7 @@
 /* Modal container */
 #popup-container {
   width: 45%;
+  max-width: 701px;
   height: 65%;
   margin: 0 auto;
   margin-top: 5%;
@@ -44,7 +45,7 @@
   top: 0px;
   right: -18px;
   z-index: 99;  
-  background: url('../img/close-modal.png');
+  background: url('http://toqueacampainha.vteximg.com.br/arquivos/close-modal.png');
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -72,11 +73,12 @@
   color: #032143;
   margin-top: -5px;
   font-family: 'Open Sans', sans-serif;
+  line-height: 16px;
 }
 
 .content-modal:before{
   content: '';
-  background-image: url('../img/box-tab-left.gif');
+  background-image: url('http://toqueacampainha.vteximg.com.br/arquivos/box-tab-left.gif');
   width: 10px;
   height: 11px;
   position: absolute;
@@ -86,7 +88,7 @@
 
 .content-modal:after{
   content: '';
-  background-image: url('../img/box-tab-right.gif');
+  background-image: url('http://toqueacampainha.vteximg.com.br/arquivos/box-tab-right.gif');
   width: 10px;
   height: 11px;
   position: absolute;
@@ -168,3 +170,8 @@ p.right-text {
 p.right-text a{
   color: #a8a8a8;
 }
+
+.continueLink, .continueLink {
+  display: none;
+}
+/* Modal Cookie - Newsletter */
