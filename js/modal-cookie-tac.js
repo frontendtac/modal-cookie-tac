@@ -1,10 +1,38 @@
 /*
-  MC-TAC V.1.05
+  MC-TAC V.1.07
 */
 ////SCRIPT FOR MODAL POPUP WINDOW
 jQuery(document).ready(function() {	
 	setTimeout(function() { 
-		if (jQuery("#popup-container").length) {
+		if (jQuery(".popup-campanha").length) {
+
+			jQuery('#popup-container a.close').click(function(){
+					jQuery('#popup-container').fadeOut();
+					jQuery('#active-popup').fadeOut();
+			});
+			
+			var visits = jQuery.cookie('visits') || 0;
+			visits++;
+			
+			jQuery.cookie('visits', visits, { expires: 1, path: '/' });
+				
+			//console.debug(jQuery.cookie('visits'));
+				
+			if ( jQuery.cookie('visits') > 3 ) {
+				jQuery('#active-popup').hide();
+				jQuery('#popup-container').hide();
+			} else {
+					var pageHeight = jQuery(document).height();
+					jQuery('<div id="active-popup"></div>').insertBefore('body');
+					jQuery('#active-popup').css("height", pageHeight);
+					jQuery('#popup-container').show();
+			}
+
+			if (jQuery.cookie('noShowWelcome')) { jQuery('#popup-container').hide(); jQuery('#active-popup').hide(); }
+
+		}
+
+		if (jQuery(".popup-newsletter").length) {
 
 			jQuery('#popup-container a.close').click(function(){
 					jQuery('#popup-container').fadeOut();
